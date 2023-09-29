@@ -9,33 +9,27 @@ import SwiftUI
 
 struct FoodListView: View {
     
-    @State private var appetizers: [Appetizer] = []
+    @StateObject var viewModel = FoodListViewModel()
+    
     
     var body: some View {
         NavigationView {
-            List(appetizers) { appetizer in
+            List(viewModel.appetizers) { appetizer in
                 FoodListCell(appetizer: appetizer)
-                
             }
             .navigationTitle("Appetizers")
         }
         .onAppear {
-            getAppetizers()
+            viewModel.getAppetizers()
+        }
+        .alert(item: $viewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title,
+                  message: alertItem.message,
+                  dismissButton: alertItem.dismissButton)
         }
     }
     
-    func getAppetizers() {
-        NetworkManager.shared.getAppetizers { result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let appetizers):
-                    self.appetizers = appetizers
-                case .failure(let error):
-                    print(error.localizedDescription)
-                }
-            }
-        }
-    }
+    
 }
 
 struct FoodListView_Previews: PreviewProvider {

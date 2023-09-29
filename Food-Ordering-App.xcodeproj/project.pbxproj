@@ -21,6 +21,8 @@
 		1082A93E2AC67AB4007C64AF /* FoodListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1082A93D2AC67AB4007C64AF /* FoodListCell.swift */; };
 		1082A9402AC68CD8007C64AF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1082A93F2AC68CD8007C64AF /* NetworkManager.swift */; };
 		1082A9422AC68DCC007C64AF /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1082A9412AC68DCC007C64AF /* APError.swift */; };
+		1082A9442AC69527007C64AF /* FoodListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1082A9432AC69527007C64AF /* FoodListViewModel.swift */; };
+		1082A9462AC696DC007C64AF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1082A9452AC696DC007C64AF /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		1082A93D2AC67AB4007C64AF /* FoodListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListCell.swift; sourceTree = "<group>"; };
 		1082A93F2AC68CD8007C64AF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		1082A9412AC68DCC007C64AF /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
+		1082A9432AC69527007C64AF /* FoodListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListViewModel.swift; sourceTree = "<group>"; };
+		1082A9452AC696DC007C64AF /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				1082A90F2AC65D19007C64AF /* Assets.xcassets */,
 				1082A9112AC65D19007C64AF /* Preview Content */,
 				1082A9352AC66985007C64AF /* FoodListView.swift */,
+				1082A9452AC696DC007C64AF /* Alert.swift */,
+				1082A9432AC69527007C64AF /* FoodListViewModel.swift */,
 				1082A93D2AC67AB4007C64AF /* FoodListCell.swift */,
 				1082A9372AC669C7007C64AF /* AccountView.swift */,
 				1082A9392AC669D9007C64AF /* OrderView.swift */,
@@ -280,11 +286,13 @@
 			files = (
 				1082A93C2AC66E13007C64AF /* Appetizer.swift in Sources */,
 				1082A9422AC68DCC007C64AF /* APError.swift in Sources */,
+				1082A9442AC69527007C64AF /* FoodListViewModel.swift in Sources */,
 				1082A9382AC669C7007C64AF /* AccountView.swift in Sources */,
 				1082A9362AC66985007C64AF /* FoodListView.swift in Sources */,
 				1082A90E2AC65D17007C64AF /* FoodTabView.swift in Sources */,
 				1082A9402AC68CD8007C64AF /* NetworkManager.swift in Sources */,
 				1082A93E2AC67AB4007C64AF /* FoodListCell.swift in Sources */,
+				1082A9462AC696DC007C64AF /* Alert.swift in Sources */,
 				1082A90C2AC65D17007C64AF /* Food_Ordering_AppApp.swift in Sources */,
 				1082A93A2AC669D9007C64AF /* OrderView.swift in Sources */,
 			);
